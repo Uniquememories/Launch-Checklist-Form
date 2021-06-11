@@ -36,7 +36,6 @@
             pilotStatus.innerHTML = `Pilot ${pilotName.value} is ready for launch!`
             copilotStatus.innerHTML = `Co-Pilot ${copilotName.value} is ready for launch!`
             faultyItems.style.visibility = "visible";
-            // console.log(cargoValue);
             if(fuelValue < 10000 && cargoValue > 10000) {
                fuelStatus.innerHTML = `Fuel Level ${fuelValue} is too low for launch!`;
                launchStatus.innerHTML = `Shuttle Not Ready for Launch!`;
