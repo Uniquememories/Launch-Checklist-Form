@@ -38,12 +38,12 @@
             faultyItems.style.visibility = "visible";
             console.log(cargoValue);
             if(fuelValue < 10000 && cargoValue > 10000) {
-               fuelStatus.innerHTML = `Fuel Level ${fuelValue} is too low for launch.`;
+               fuelStatus.innerHTML = `Fuel Level ${fuelValue} is too low for launch!`;
                launchStatus.innerHTML = `Shuttle Not Ready for Launch!`;
                launchStatus.style.color = "red";
                cargoStatus.innerHTML = `${cargoValue} kg cargo mass weighs too much for takeoff!`
             } else if (fuelValue < 10000) {
-               fuelStatus.innerHTML = `Fuel Level ${fuelValue} is too low for launch.`;
+               fuelStatus.innerHTML = `Fuel Level ${fuelValue} is too low for launch!`;
                launchStatus.innerHTML = `Shuttle Not Ready for Launch!`;
                launchStatus.style.color = "red";
                cargoStatus.innerHTML = `Cargo mass low enough for launch.`
