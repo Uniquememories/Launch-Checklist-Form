@@ -41,21 +41,21 @@
                fuelStatus.innerHTML = `Fuel Level ${fuelValue} is too low for launch.`;
                launchStatus.innerHTML = `Shuttle Not Ready for Launch!`;
                launchStatus.style.color = "red";
-               cargoStatus.innerHTML = `${cargoValue} kg weighs too much for takeoff.`
+               cargoStatus.innerHTML = `${cargoValue} kg cargo mass weighs too much for takeoff!`
             } else if (fuelValue < 10000) {
                fuelStatus.innerHTML = `Fuel Level ${fuelValue} is too low for launch.`;
                launchStatus.innerHTML = `Shuttle Not Ready for Launch!`;
                launchStatus.style.color = "red";
                cargoStatus.innerHTML = `Cargo mass low enough for launch.`
             } else if (cargoValue > 10000) {
-               launchStatus.innerHTML = `Shuttle not ready for launch.`;
+               launchStatus.innerHTML = `Shuttle not ready for launch!`;
                launchStatus.style.color = "red";
-               cargoStatus.innerHTML = `${cargoValue} kg weighs too much for takeoff.`;
+               cargoStatus.innerHTML = `${cargoValue} kg cargo mass weighs too much for takeoff!`;
                fuelStatus.innerHTML = `Fuel level high enough for launch.`;
             } else {
                launchStatus.innerHTML = `Shuttle is ready for launch.`;
                launchStatus.style.color = "green";
-               fuelStatus.innerHTML = `Fuel level high enough for launch`;
+               fuelStatus.innerHTML = `Fuel level high enough for launch.`;
                cargoStatus.innerHTML = `Cargo mass low enough for launch.`
             };
          };
